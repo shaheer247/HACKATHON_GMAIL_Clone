@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Gmail-clone</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo-64.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <section>
+    <header class="header">
+      <div class="left-area flex">
+        <div class="menu hover">
+          <span class="icon"></span>
+          <span class="icon"></span>
+          <span class="icon"></span>
+
+        </div>
+        <img src="./img/logo.png" alt="logo" />
+        <span class="mail-text">Gmail</span>
+      </div>
+      <div class="middle-area">
+        <div class="search">
+          <ion-icon name="search-outline" class="hover"></ion-icon>
+          <input type="search" placeholder="Search mail" />
+        </div>
+      </div>
+      <div class="right-area flex">
+        <ion-icon name="help-circle-outline" class="hover"></ion-icon>
+        <ion-icon name="settings-outline" class="hover"></ion-icon>
+        <ion-icon name="apps" class="hover"></ion-icon>
+        <div id="user"><i class="fa-solid fa-user"></i>
+        </div>
+
+      </div>
+      </div>
+    </header>
+    <nav>
+      <div class="nav_container">
+        <div class="nav_top">
+          <span> <i class="fa-solid fa-pen"></i> Compose</span>
+        </div>
+        <div class="nav_middle">
+          <ul>
+            <li>
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+                Inbox
+              </a>
+              <span>4</span>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="star-outline"></ion-icon>
+                Starred
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="time-outline"></ion-icon>
+                Snoozed
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="send-outline"></ion-icon>
+                Sent
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="document-outline"></ion-icon>
+                Draft
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+                More
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_bottom">
+          <span>Labels</span>
+          <ion-icon name="add" class="hover"></ion-icon>
+        </div>
+      </div>
+    </nav>
+    <main class="main_content">
+      <div class="top">
+        <div class="left">
+          <div class="check">
+            <img src="./img/checkbox.png" alt="" />
+            <span> <ion-icon name="checkmark"></ion-icon> </span>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </div>
+          <ion-icon name="reload-outline" class="hover content-icon"></ion-icon>
+          <ion-icon name="ellipsis-vertical" class="hover content-icon"></ion-icon>
+        </div>
+        <div class="right">
+          <div class="sort_numbers hover">1-1 of 5</div>
+          <ion-icon name="chevron-back-outline" class="chev content-icon"></ion-icon>
+          <ion-icon name="chevron-forward-outline" class="hover content-icon"></ion-icon>
+        </div>
+      </div>
+      <div class="emailList__sections">
+        <div class="section section__selected ">
+          <span class="material-icons"> <i class="fa-solid fa-inbox"></i> </span>
+          <h5>Primary</h5>
+        </div>
+
+        <div class="section  ">
+          <span class="material-icons"> <i class="fa-solid fa-person"></i> </span>
+          <h5>Social</h5>
+        </div>
+
+        <div class="section">
+          <span class="material-icons"> <i class="fa-solid fa-tag"></i> </span>
+          <h5>Promotions</h5>
+        </div>
+      </div>
+    
+      <div class="messages_area">
+        <div class="messages">
+          <div class="messages_left">
+            <div class="check check_2">
+              <img src="./img/checkbox.png" alt="" />
+              <span> <ion-icon name="checkmark"></ion-icon> </span>
+            </div>
+            <ion-icon name="star-outline" class="hover star"></ion-icon>
+            <span>
+              <h5>Google</h5>
+            </span>
+          </div>
+          <div class="messages_content">
+            You Login Successfully
+          </div>
+          <div class="messages_date">1:00Pm</div>
+        </div>
+      </div>
+
+    </main>
+    
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
